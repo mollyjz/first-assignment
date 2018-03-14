@@ -28,7 +28,7 @@
 }
 
 #body-background {
-  background: #000000;
+  background-image: url("../images/circles-light.png");
   padding-top: 30px;
   height: 100%;
 }
@@ -76,6 +76,7 @@
   float: left;
   font-family: Georgia, 'Times New Roman', Times, serif;
   background: #4aaaa5;
+  color: #ffffff;
   padding-right: 30px;
   padding-left: 30px;
   padding-top: 10px;
@@ -115,76 +116,86 @@ body {
 }
 
 .photo-banner {
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
+  position: relative;
+  top: 100px;
+  width: 174px;
+  text-align: center;
   background: #4aaaa5;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  z-index: 2;
 }
 
 #giraffe {
-  background-image: url('./assets/images/giraffe.jpg');
+  background-image: url("../images/giraffe.jpeg");
+  background-repeat: round;
   display: inline-block;
   width: 174px;
   height: 130px;
+  margin-left: 13px;
 }
 
 #deer {
-  background-image: url('./assets/images/deer.jpg');
+  background-image: url("../images/deer.jpeg");
+  background-repeat: round;
   display: inline-block;
   width: 174px;
   height: 130px;
+  margin-right: 13px;
 }
 
 #puppy {
-  background-image: url('./assets/images/puppy.jpg');
+  background-image: url("../images/puppy.jpeg");
+  background-repeat: round;
   display: inline-block;
   width: 174px;
   height: 130px;
+  margin-right: 13px;
 }
 
 #UNH {
-  background-image: url('./assets/images/unh.jpg');
+  background-image: url("../images/unh.jpeg");
+  background-repeat: round;
   display: inline-block;
   width: 174px;
   height: 130px;
+  margin-left: 13px;
 }
 
 #gorilla {
-  background-image: url('./assets/images/gorilla.jpg');
+  background-image: url("../images/gorilla.jpeg");
+  background-repeat: round;
   display: inline-block;
   width: 174px;
   height: 130px;
 }
 
 #line1 {
-    width: 60%;
-  align-content: left;
+    align-content: left;
+    overflow: auto;
+    margin-top: 25px;
+    margin-bottom: 35px;
 }
 
 #line2 {
-  width: 60%;
   align-content: left;
+  overflow: auto;
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 
 #line3 {
-  width: 60%;
   align-content: left;
+  overflow: auto;
+  margin-top: 35px;
 }
 
-a:link {
+a.header-links, a.header-links:visited {
   color: #777;
 }
 
-a:visited {
-  color: #777;
-}
-
-a:hover {
+a.header-links:hover, a.header-links:active {
   color: #4aaaa5;
 }
 
-a:active {
-  color: #4aaaa5;
+a.photo-links, a.photo-links:visited, a.photo-links:hover, a.photo-links:active {
+  color: #ffffff;
 }
