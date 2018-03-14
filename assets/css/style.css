@@ -1,15 +1,24 @@
 #header-text {
   display: inline-block;
   width: 50%;
+  height: 100%;
   margin: auto;
+  font-size: 16px;
   }
 
 #header {
   background: #ffffff;
   width: 100%;
+  height: 100%;
   border-bottom: 0.5px solid #ccc;
   margin: 0 auto;
   text-align: center;
+}
+
+#top-border {
+  position: absolute
+  left: 20%;
+  border: 1px solid #ccc;
 }
 
 .footer {
@@ -23,7 +32,8 @@
 
 #footer-text {
   font-family: Arial, Helvetica, sans-serif;
-  padding-bottom: 25px;
+  font-size: 10px;
+  padding-bottom: 35px;
   padding-top: 40px;
 }
 
@@ -42,16 +52,26 @@
   margin-bottom: 120px;
   overflow: auto;
   padding-bottom: 20px;
-  }
+}
 
 #bio {
   text-align: justify;
   color: #777777;
-  padding-left: 23px;
-  padding-right:23px;
-  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-bottom: 10px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#bio-text {
+  border: 1px solid #ccc;
+}
+
+#form {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #777;
+  padding-left: 23px;
+  padding-right:23px;
 }
 
 #photo-section {
@@ -81,6 +101,7 @@
   padding-left: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
+  height: 100%;
 }
 
 #profile-pic {
@@ -97,7 +118,6 @@
   padding-left: 30px;
   padding-top: 10px;
   padding-bottom: 15px;
-  border-bottom: 0.5px solid #ffffff;
 }
 
 h2 {
@@ -196,6 +216,40 @@ a.header-links:hover, a.header-links:active {
   color: #4aaaa5;
 }
 
-a.photo-links, a.photo-links:visited, a.photo-links:hover, a.photo-links:active {
+a.photo-links, a.photo-links:visited, a.photo-links:hover a.photo-links:active {
   color: #ffffff;
+}
+
+.message {
+  width: 96%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #777;
+  font-size: 13px;
+  padding: 6px;
+}
+
+.name {
+  width: 96%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #777;
+  font-size: 13px;
+  padding: 6px;
+}
+
+.email {
+  width: 96%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #777;
+  font-size: 13px;
+  padding: 6px;
+}
+
+.button {
+  background: #4aaaa5;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-right: 18px;
+  padding-left: 18px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
