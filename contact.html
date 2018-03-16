@@ -4,16 +4,16 @@
   <head>
     <title>Contact Me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <link rel="stylesheet" href="reset.css" type="text/css">
   </head>
     
     <div id="header"> <!-- CONTAINER FOR ENTIRE HEADER SECTION -->
 
       <div id="header-text"> <!-- CONTAINER FOR HEADER TEXT ONLY -->
 
-        <div id="name"> <!-- CONTAINER FOR MY NAME ON HEADER -->
-          <h2>Molly Zurheide</h2>
+        <div id="name-header"> <!-- CONTAINER FOR MY NAME ON HEADER -->
+          Molly Zurheide
         </div>  
         
         <!-- I WASN'T ABLE TO GET THE HEADER CONTENT TO TAKE UP THE ENTIRE HEIGHT OF THE HEADER DIV; AS YOU CAN SEE, THERE'S EXTRA SPACE BETWEEN MY NAME AND THE BOTTOM OF THE HEADER DIV. -->
@@ -34,45 +34,46 @@
       <div id="main"> <!-- CONTAINER FOR ALL MAIN SECTION TEXT -->
     
         <div id="section-banner"> <!-- CONTAINER FOR `CONTACT` TEXT -->
-          <h2>Contact</h2>
-          <div id="top-border">
-          </div>
+          Contact
         </div>
-  
+        
+        <div id="top-border">
+        </div>
+        
         <div id="form"> <!-- CONTAINER FOR FORM CONTENT -->
         
         <form action="#" target="_blank">
+         
           <p>
             Name
             <br>
-            <input type="text" class="name" value="John Smith">
-            </input>
+            <input type="text" id="name" value="John Smith">
           </p>
           
           <p>
             Email
             <br>
-            <input type="text" class="email" value="example@gmail.com">
-            </input>
+            <input type="text" id="email" value="example@gmail.com">
           </p>
 
           <p>
             Message
             <br>
-            <textarea name="message" class="message" rows="10">
+            <textarea name="message" id="message" rows="10">
             </textarea>
           </p> 
        
-        <input class="button" type="submit">
-        </input>
-        
+        <input id="button" type="submit">
+      
+        </form>  
+      
       </div>
-    </form>
+      
       </div> <!-- ENDING MAIN SECTION TEXT CONTAINER -->
     
     </div> <!-- ENDING MAIN SECTION BACKDROP CONTAINER -->
   
-  <div class="footer"> <!-- CONTAINER FOR FOOTER SECTION -->
+  <div id="footer"> <!-- CONTAINER FOR FOOTER SECTION -->
     <div id="footer-text">
      Copyright 2018
     </div>

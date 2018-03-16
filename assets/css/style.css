@@ -16,24 +16,28 @@
 }
 
 #top-border {
-  position: absolute
-  left: 20%;
+  position: relative;
+  left: 30px;
+  width: 90%;
   border: 1px solid #ccc;
 }
 
-.footer {
+#footer {
   width: 100%;
   clear: both;
+  position: relative;
+  bottom: 0px;
   text-align: center;
   background: #666666;
-  margin-bottom: 0;
+  margin-bottom: 0px;
   border-top: 5px solid #4aaaa5;
 }
 
 #footer-text {
   font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
   font-size: 10px;
-  padding-bottom: 35px;
+  padding-bottom: 40px;
   padding-top: 40px;
 }
 
@@ -44,13 +48,15 @@
 }
 
 #main {
-  background: #dddddd;
+  background: #ffffff;
+  border: 0.5px #dddddd solid;
   width: 50%;
   line-height: 25px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 120px;
   overflow: auto;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -60,14 +66,16 @@
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 10px;
+  padding-top: 30px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #form {
   font-family: Arial, Helvetica, sans-serif;
   color: #777;
-  padding-left: 23px;
-  padding-right:23px;
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-right:25px;
 }
 
 #photo-section {
@@ -88,15 +96,17 @@
   padding-bottom: 30px;
 }
 
-#name {
+#name-header {
   float: left;
+  font-size: 1.5em;
+  font-weight: bold;
   font-family: Georgia, 'Times New Roman', Times, serif;
   background: #4aaaa5;
   color: #ffffff;
   padding-right: 30px;
   padding-left: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   height: 100%;
 }
 
@@ -113,28 +123,22 @@
   padding-right: 30px;
   padding-left: 30px;
   padding-top: 10px;
-  padding-bottom: 15px;
-}
-
-h2 {
+  padding-bottom: 25px;
   text-align: left;
-}
-
-.portfolio {
-  height: 132px;
-  width: 175px;
+  font-size: 1.5em;
+  font-weight: bold;
 }
 
 body {
   margin: 0px;
   padding: 0px;
   height: 100%;
-}
+  }
 
 .photo-banner {
   position: relative;
-  top: 100px;
-  width: 174px;
+  top: 125px;
+  width: 200px;
   text-align: center;
   background: #4aaaa5;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -144,8 +148,8 @@ body {
   background-image: url("../images/giraffe.jpeg");
   background-repeat: round;
   display: inline-block;
-  width: 174px;
-  height: 130px;
+  width: 200px;
+  height: 156px;
   margin-left: 13px;
 }
 
@@ -153,8 +157,8 @@ body {
   background-image: url("../images/deer.jpeg");
   background-repeat: round;
   display: inline-block;
-  width: 174px;
-  height: 130px;
+  width: 200px;
+  height: 156px;
   margin-right: 13px;
 }
 
@@ -162,8 +166,8 @@ body {
   background-image: url("../images/puppy.jpeg");
   background-repeat: round;
   display: inline-block;
-  width: 174px;
-  height: 130px;
+  width: 200px;
+  height: 156px;
   margin-right: 13px;
 }
 
@@ -171,8 +175,8 @@ body {
   background-image: url("../images/unh.jpeg");
   background-repeat: round;
   display: inline-block;
-  width: 174px;
-  height: 130px;
+  width: 200px;
+  height: 156px;
   margin-left: 13px;
 }
 
@@ -180,8 +184,8 @@ body {
   background-image: url("../images/gorilla.jpeg");
   background-repeat: round;
   display: inline-block;
-  width: 174px;
-  height: 130px;
+  width: 200px;
+  height: 156px;
 }
 
 #line1 {
@@ -189,6 +193,7 @@ body {
     overflow: auto;
     margin-top: 25px;
     margin-bottom: 35px;
+    padding-left: 10px;
 }
 
 #line2 {
@@ -196,12 +201,14 @@ body {
   overflow: auto;
   margin-top: 35px;
   margin-bottom: 35px;
+  padding-left: 10px;
 }
 
 #line3 {
   align-content: left;
   overflow: auto;
   margin-top: 35px;
+  padding-left: 10px;
 }
 
 a.header-links, a.header-links:visited {
@@ -216,7 +223,11 @@ a.photo-links, a.photo-links:visited, a.photo-links:hover a.photo-links:active {
   color: #ffffff;
 }
 
-.message {
+a {
+  text-decoration: none;
+}
+
+#message {
   width: 96%;
   font-family: Arial, Helvetica, sans-serif;
   color: #777;
@@ -224,23 +235,25 @@ a.photo-links, a.photo-links:visited, a.photo-links:hover a.photo-links:active {
   padding: 6px;
 }
 
-.name {
+#name {
+  width: 96%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #777;
+  padding: 6px;
+  margin-bottom: 10px;
+  text-align: left;
+}  
+
+#email {
   width: 96%;
   font-family: Arial, Helvetica, sans-serif;
   color: #777;
   font-size: 13px;
   padding: 6px;
+  margin-bottom: 10px;
 }
 
-.email {
-  width: 96%;
-  font-family: Arial, Helvetica, sans-serif;
-  color: #777;
-  font-size: 13px;
-  padding: 6px;
-}
-
-.button {
+#button {
   background: #4aaaa5;
   color: #ffffff;
   font-family: Arial, Helvetica, sans-serif;
